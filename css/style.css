@@ -1,0 +1,69 @@
+.card {
+    
+    /* border: 2px solid red; */
+}
+
+.card:hover {
+    margin-top: -10px;
+}
+
+.sub-heading {
+    padding: 5px;
+    /* border: 2px solid green; */
+}
+.body {
+    position: relative;
+    height: 325px;
+}
+
+.image {
+    height: 380px;
+    /* border: 2px solid blue; */
+}
+
+.ctitle {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    /* border: 2px solid orange; */
+}
+
+#pastel, #werewolf{
+    margin-bottom: 55px;
+    /* border: 2px solid pink; */
+}
+
+.ctextname {
+    margin-bottom: 0;
+    text-transform: capitalize;
+
+}
+
+.ctext {
+    font-size: 14px;
+    /* position: absolute; */
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 5px;
+    /* border: 2px solid brown; */
+}
+.morebtn {
+    position: absolute;
+    bottom: 5px;
+    /* border: 2px solid white; */
+}
+
+
+.address-list {
+    margin-bottom: 0;
+    border: 2px solid hotpink;
+}
+
+#cfooter:hover {
+    margin: 0;
+}
+
+.footer .row {
+    border: 1px solid white;
+}
+
+

@@ -9,3 +9,9 @@ themeBtn.addEventListener('click', ()=> {
 
     html.getAttribute('data-bs-theme') == 'light' ? html.setAttribute('data-bs-theme','dark') : html.setAttribute('data-bs-theme','light')
 });
+
+// bootstrap popover
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
