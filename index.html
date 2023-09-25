@@ -11,8 +11,9 @@
     <header class="header" id="header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg top-nav" id="topNav">
-                <h1 class="heading">
+                <h1 class="heading" id="head">
                     <a href="#" class="navbar-brand text-primary">the sims 4</a>
+                    <img src="images/ts4plumbob.png" class="img-fluid plumbob" alt="">
                 </h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
@@ -38,12 +39,20 @@
                             </button>
                         </li>
                     </ul>
-                    <form action="#" class="form d-flex" role="search">
-                        <div class="form-floating">
-                            <input class="form-control me-2" type="search" aria-label="search" id="search">
-                            <label for="search">Search</label>
-                        </div>
-                    </form>
+                    <div class="row">
+                        <form action="#" class="form d-flex" role="search">
+                            <div class="form-floating formsearch">
+                                <input class="form-control me-2" type="search" aria-label="search" id="search" placeholder="search">
+                                <label for="search" id="labelsearch">Search...
+                                </label>
+                            </div>
+                            <button type="button" class="btn searchbtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -308,8 +317,6 @@
                                 <p class="card-text display-6 ctextname">island living</p>
                                 <p class="card-text ctext"> Do your sims need a vacation from it all? </p>
 
-                                <p class="card-text"></p>
-
                                 <button type="button" class="btn btn-lg btn-success morebtn" data-bs-toggle="popover" data-bs-title="Welcome to Sulani, where the sun shines bright and the nights are totally chill. Set sail on the glistening water in your island canoe, swim to your heart's content, and explore the scenery on a watercraft. Build a spectacular sand castle, catch some rays and even meet a mermaid! Become a conservationist, clean up the beaches and watch your Sims' impact bloom all over the island. Take to the waves in a fishing or diving career, or become a lifeguard to keep the locals safe under the sun. No career? No problem! Sims can do odd jobs or fish for their next meal.">More</button>
                             </div>
                             <footer class="card-footer">
@@ -326,8 +333,6 @@
                                 <p class="card-text display-6 ctextname">eco lifestye</p>
                                 <p class="card-text ctext"> Save the enviornment with the eco lifestyle pack. Reduce, reuse, and recycle!  </p>
 
-                                <p class="card-text"></p>
-
                                 <button type="button" class="btn btn-lg btn-success morebtn" data-bs-toggle="popover" data-bs-title="Produce your own electricity and water with solar panels, wind turbines, and dew collectors, or grow your own food in a new vertical garden to really control your impact on the world. Engage with your neighborhood through the new voting board to decide on different Neighborhood Action Plans each week. Everyone in the community has a voice, so you have to push if you really want something. Team up with local crafters, activists, and technicians to build up support! Every decision you make—what power sources you rely on, how you design your home, and which Neighborhood Action Plans you vote for—influences the state of the world, from smoggy skies to crystal-clear water. If you don't take action, you might see nature retreat as junk accumulates around town. ">More</button>
                             </div>
                             <footer class="card-footer">
@@ -337,16 +342,12 @@
                         </div>
                     </div>
                     <div class="col d-md-none d-lg-block">
-                        <div class="card h-100">
+                        <div class="card">
                             <img src="images/ts4pastel.jpg" alt="placeholder img" class="img-fluid card-img card-img-top image" />
                             <div class="card-body body">
                                 <h3 class="card-title ctitle" id="pastel">the sims 4 kit</h3>
                                 <p class="card-text display-6 ctextname">pastel pop</p>
                                 <p class="card-text ctext"> Add a pop of color to your sims life with the pastel pop kit! </p>
-
-                                <p class="card-text">
-                                    
-                                </p>
 
                                 <button type="button" class="btn btn-lg btn-success morebtn" data-bs-toggle="popover" data-bs-title="Create a contemporary space that draws inspiration from times gone by. The patterned bed sheets and psychedelically curved table legs in this kit are nostalgic for summertime in the 60s and 70s, but they still fit right in with modern, understated, décor. Decorating should be fun and carefree! Give your room a quirky side with irregular, but simple, shapes in dreamy pastel colors. This collection has heart chairs, mirrors shaped like puddles, and even more ways to incorporate whimsy into everyday design.">More</button>
                             </div>
@@ -364,17 +365,17 @@
         <div class="container-fluid">
             <div class="card-group">
                 <div class="card h-100" id="cfooter">
-                    <div class="row">
+                    <div class="row newsrow">
                         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 justify-content-evenly">
-                            <div class="col-md-4">
+                            <div class="col-md-4 newsletter">
                                 <form action="#" class="form">
                                     <h2 class="sub-heading"><span>subscribe</span> to our <span>newsletter</span></h2>
                                     <div class="mb-3">
-                                        <label for="name" class="form-label">name</label>
+                                        <label for="name" class="form-label formname">name:</label>
                                         <input type="text" class="form-control" id="name" value="">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="email" class="form-label">email</label>
+                                        <label for="email" class="form-label formname">email:</label>
                                         <input type="text" class="form-control" id="email" value="">
                                     </div>
                                     <div class="mb-3">
@@ -382,15 +383,8 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-md-4">
-                                <ul class="address-list list-group">
-                                    <li class="address-item list-item list-group-item">124 conch st.</li>
-                                    <li class="address-item list-item list-group-item">bikini bottom, 56021 </li>
-                                    <li class="address-item list-item list-group-item">281-330-8004</li>
-                                    <li class="address-item list-item list-group-item">info@semiij4.com</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-2">
+                        
+                            <div class="col-md-2 offset-md-2">
                                 <nav class="nav bottom-nav justify-content-center justify-content-md-evenly" id="bottomNav">
                                     <a href="#" class="nav-link social-link">
                                         <!-- icon here -->
@@ -412,9 +406,14 @@
                                             <path d="M15.943 11.526c-.111-.303-.323-.465-.564-.599a1.416 1.416 0 0 0-.123-.064l-.219-.111c-.752-.399-1.339-.902-1.746-1.498a3.387 3.387 0 0 1-.3-.531c-.034-.1-.032-.156-.008-.207a.338.338 0 0 1 .097-.1c.129-.086.262-.173.352-.231.162-.104.289-.187.371-.245.309-.216.525-.446.66-.702a1.397 1.397 0 0 0 .069-1.16c-.205-.538-.713-.872-1.329-.872a1.829 1.829 0 0 0-.487.065c.006-.368-.002-.757-.035-1.139-.116-1.344-.587-2.048-1.077-2.61a4.294 4.294 0 0 0-1.095-.881C9.764.216 8.92 0 7.999 0c-.92 0-1.76.216-2.505.641-.412.232-.782.53-1.097.883-.49.562-.96 1.267-1.077 2.61-.033.382-.04.772-.036 1.138a1.83 1.83 0 0 0-.487-.065c-.615 0-1.124.335-1.328.873a1.398 1.398 0 0 0 .067 1.161c.136.256.352.486.66.701.082.058.21.14.371.246l.339.221a.38.38 0 0 1 .109.11c.026.053.027.11-.012.217a3.363 3.363 0 0 1-.295.52c-.398.583-.968 1.077-1.696 1.472-.385.204-.786.34-.955.8-.128.348-.044.743.28 1.075.119.125.257.23.409.31a4.43 4.43 0 0 0 1 .4.66.66 0 0 1 .202.09c.118.104.102.26.259.488.079.118.18.22.296.3.33.229.701.243 1.095.258.355.014.758.03 1.217.18.19.064.389.186.618.328.55.338 1.305.802 2.566.802 1.262 0 2.02-.466 2.576-.806.227-.14.424-.26.609-.321.46-.152.863-.168 1.218-.181.393-.015.764-.03 1.095-.258a1.14 1.14 0 0 0 .336-.368c.114-.192.11-.327.217-.42a.625.625 0 0 1 .19-.087 4.446 4.446 0 0 0 1.014-.404c.16-.087.306-.2.429-.336l.004-.005c.304-.325.38-.709.256-1.047Zm-1.121.602c-.684.378-1.139.337-1.493.565-.3.193-.122.61-.34.76-.269.186-1.061-.012-2.085.326-.845.279-1.384 1.082-2.903 1.082-1.519 0-2.045-.801-2.904-1.084-1.022-.338-1.816-.14-2.084-.325-.218-.15-.041-.568-.341-.761-.354-.228-.809-.187-1.492-.563-.436-.24-.189-.39-.044-.46 2.478-1.199 2.873-3.05 2.89-3.188.022-.166.045-.297-.138-.466-.177-.164-.962-.65-1.18-.802-.36-.252-.52-.503-.402-.812.082-.214.281-.295.49-.295a.93.93 0 0 1 .197.022c.396.086.78.285 1.002.338.027.007.054.01.082.011.118 0 .16-.06.152-.195-.026-.433-.087-1.277-.019-2.066.094-1.084.444-1.622.859-2.097.2-.229 1.137-1.22 2.93-1.22 1.792 0 2.732.987 2.931 1.215.416.475.766 1.013.859 2.098.068.788.009 1.632-.019 2.065-.01.142.034.195.152.195a.35.35 0 0 0 .082-.01c.222-.054.607-.253 1.002-.338a.912.912 0 0 1 .197-.023c.21 0 .409.082.49.295.117.309-.04.56-.401.812-.218.152-1.003.638-1.18.802-.184.169-.16.3-.139.466.018.14.413 1.991 2.89 3.189.147.073.394.222-.041.464Z"/>
                                         </svg>
                                         <span class="visually-hidden">snapchat</span>
-                                    </a>
-                                    
+                                    </a>                                    
                                 </nav>
+                                <ul class="address-list list-group">
+                                    <li class="address-item list-item list-group-item">124 conch st.</li>
+                                    <li class="address-item list-item list-group-item">bikini bottom, 56021 </li>
+                                    <li class="address-item list-item list-group-item">281-330-8004</li>
+                                    <li class="address-item list-item list-group-item"><a href="#">info@semiij4.com</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -422,6 +421,11 @@
             </div>
             <div class="row">
                 <p class="colophon text-center">site by SemiiJ &copy; 2023</p>
+                <a href="#head" class="btt">back to top
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>

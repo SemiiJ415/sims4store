@@ -1,6 +1,24 @@
-.card {
-    
-    /* border: 2px solid red; */
+
+span, .address-item, .formname, .btt, .sub-heading, .card-btn, #head, #confirmBtn {
+    text-transform: capitalize;
+}
+
+/* header */
+
+#header {
+    border-bottom: 2px solid green;
+}
+
+.plumbob{
+    height: 30px;
+}
+
+/* main */
+
+#banner {
+    border-top: 2px solid green;
+    border-bottom: 4px solid green;
+
 }
 
 .card:hover {
@@ -9,27 +27,32 @@
 
 .sub-heading {
     padding: 5px;
-    /* border: 2px solid green; */
+    font-weight: 600;
+    text-decoration: underline;
 }
+
+#featured, #newpacks, #topselling{
+    margin: 40px 0;
+}
+
 .body {
-    position: relative;
-    height: 325px;
+    /* position: relative; */
+    /* height: 325px; */
+    border: 2px solid orangered;
 }
 
 .image {
     height: 380px;
-    /* border: 2px solid blue; */
+    border-bottom: 10px solid green;
 }
 
 .ctitle {
     margin-bottom: 20px;
     text-transform: capitalize;
-    /* border: 2px solid orange; */
 }
 
 #pastel, #werewolf{
     margin-bottom: 55px;
-    /* border: 2px solid pink; */
 }
 
 .ctextname {
@@ -40,30 +63,38 @@
 
 .ctext {
     font-size: 14px;
-    /* position: absolute; */
     margin-top: 0;
     margin-bottom: 10px;
     padding: 5px;
-    /* border: 2px solid brown; */
 }
+
 .morebtn {
     position: absolute;
     bottom: 5px;
-    /* border: 2px solid white; */
 }
 
+/* footer */
 
-.address-list {
-    margin-bottom: 0;
-    border: 2px solid hotpink;
+
+#cfooter {
+    border: 2px solid green;
+    margin-top: 0;
 }
-
 #cfooter:hover {
-    margin: 0;
+    margin: 0px;
 }
 
-.footer .row {
-    border: 1px solid white;
+#h4, #h2 {
+    font-size: 20px;
+}
+
+.bottom-nav{
+    margin-top: 50px;
+}
+.colophon {
+    color: black;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 
